@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section01{
+    width: 100vw;
+    height: 50vw;
+    background: url(image/Layer-20.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    position: relative;
+   
+}
+.group1{
+    display: flex;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    right: 10vw;
+}
+.group2{
+    display: flex;
+    align-items: start;
+    position: absolute;
+    top: 0vw;
+    right: -20vw;
+    transform: rotate(20deg);
+}
+
+.group3{
+    display: flex;
+    align-items: start;
+    position: absolute;
+    top: 0vw;
+    /* left: -20vw; */
+    transform: rotate(160deg);
+}
+.section01 .group1 div {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: red;
+    margin-left: 1vw;
+    border-radius: 0 1vw 0 2vw;
+  
+}
+ .section01 .group2  div {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: red;
+    margin-left: 1vw;
+    border-radius: 0 1vw 0 2vw;
+   
+}
+.section01 .group3  div {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: red;
+    margin-left: 1vw;
+    border-radius: 0 1vw 0 2vw;
+   
+}
+
+
+@keyframes div-animation {
+    0%{
+
+    }
+    100%{
+        transform: translateY(50vw)translateX(20vw)rotateY(2160deg);
+    }
+}
+
+.section01 .group1 .div1,
+.div30,.div15,.div7,.div21,.div27,.div4,.div18,.div20,.div29{
+    animation: div-animation 10s 5 linear ;
+}
+.section01 .group1 .div2,
+.div28,.div16,.div8,.div22,.div26,.div3,.div17,.div19{
+    animation: div-animation 10s 5 linear ;
+    animation-delay: 2s;
+}
+
+.section01 .group1 .div5,
+.div25,.div14,.div6,.div23,.div24,.div9,.div11,.div13,.div12,.div10{
+    animation: div-animation 10s 5 linear ;
+    animation-delay: 4s;
+}
+
+@keyframes group2-animation {
+    0%{
+
+    }
+    100%{
+        transform: translateY(100vw)translateX(-100vw)rotate(2160deg);
+    }
+}
+
+.section01 .group2 .div01,
+.div030,.div015,.div07,.div021,.div027,.div04,.div018,.div020,.div029{
+    animation: group2-animation 10s 5 linear ;
+}
+.section01 .group2 .div02,
+.div028,.div016,.div08,.div022,.div026,.div03,.div017,.div019{
+    animation: group2-animation 10s 5 linear ;
+    animation-delay: 2s;
+}
+
+.section01 .group2 .div05,
+.div025,.div014,.div06,.div023,.div024,.div09,.div011,.div013,.div012,.div010{
+    animation: group2-animation 10s 5 linear ;
+    animation-delay: 4s;
+}
+
+
+@keyframes group3-animation {
+    0%{
+
+    }
+    100%{
+        transform: translateY(-100vw)translateX(-100vw)rotate(2160deg);
+    }
+}
+
+.section01 .group3 .div001,
+.div0030,.div0015,.div007,.div0021,.div0027,.div004,.div0018,.div0020,.div0029{
+    animation: group3-animation 10s 5 linear ;
+}
+.section01 .group3 .div002,
+.div0028,.div0016,.div008,.div0022,.div0026,.div003,.div0017,.div0019{
+    animation: group3-animation 10s 5 linear ;
+    animation-delay: 2s;
+}
+
+.section01 .group3 .div005,
+.div0025,.div0014,.div006,.div0023,.div0024,.div009,.div0011,.div0013,.div0012,.div0010{
+    animation: group3-animation 10s 5 linear ;
+    animation-delay: 4s;
+}
